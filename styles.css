@@ -268,28 +268,11 @@ small { font-family: var(--text); font-weight: 500; font-size: 0.72em; opacity: 
 
 /* ---- cuándo y dónde ---- */
 .visit__grid { display: grid; gap: var(--space-l); }
-.tbc {
-  display: inline-block; margin: -0.5rem 0 var(--space-m); padding: 0.4rem 0.9rem; border-radius: var(--radius);
-  background: transparent; color: var(--ink); border: 2px solid var(--ink); font-weight: 600; font-size: 0.9375rem;
-}
 .hours { display: grid; gap: 0.75rem; }
 .hours div { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--ink); padding-bottom: 0.6rem; max-width: 26rem; }
 .hours dt { font-weight: 600; }
-.hours dd { font-family: var(--display); font-weight: 800; font-size: clamp(1.5rem, 4vw, 2rem); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.hours dd { text-align: right; line-height: 1.15; font-family: var(--display); font-weight: 800; font-size: clamp(1.5rem, 4vw, 2rem); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
 .hours__note { margin-top: var(--space-s); color: var(--grey); }
-.dayline {
-  position: relative; height: 1.25rem; margin-top: var(--space-m); max-width: 26rem;
-  background: var(--paper); border-radius: var(--radius); overflow: visible;
-}
-.dayline span {
-  position: absolute; top: 0; bottom: 0; border-radius: var(--radius); background: var(--orange);
-  left: calc((var(--from) - 8) / 14 * 100%); width: calc((var(--to) - var(--from)) / 14 * 100%);
-}
-.dayline i { position: absolute; top: 1.6rem; font-style: normal; font-size: 0.8125rem; color: var(--grey); transform: translateX(-50%); }
-.dayline i:nth-of-type(1) { left: 0; transform: none; }
-.dayline i:nth-of-type(2) { left: calc(6 / 14 * 100%); }
-.dayline i:nth-of-type(3) { left: calc(9 / 14 * 100%); }
-.dayline i:nth-of-type(4) { right: 0; left: auto; transform: none; }
 
 .pin {
   display: grid; position: relative; text-decoration: none; background: var(--blue); color: var(--white);
